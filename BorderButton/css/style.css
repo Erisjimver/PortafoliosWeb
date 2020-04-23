@@ -1,0 +1,70 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: seagreen;
+}
+h1
+{
+    text-align: center;
+    color: #fff;
+}
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2m;
+}
+.item
+{
+    background: black;
+    line-height: 4;
+    padding: 0 2em;
+    margin: 1.5em;
+    color: #fff;
+    position: relative;
+}
+
+.item:before
+{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    /*left: 0;*/
+    bottom: 0;
+    transition: all .3s;
+}
+
+
+.uno:before
+{
+    left: 0;
+}
+.uno:hover:before{
+    width: 100%;
+}
+
+
+.dos:before
+{
+    right: 0;
+}
+.dos:hover:before{
+    width: 100%;
+}
+
+.tres:before
+{
+    left: 50%;
+}
+.tres:hover:before
+{
+    left: 0;
+    width: 100%;
+}
+
+
