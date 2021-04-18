@@ -19,6 +19,7 @@ section {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 section .box {
@@ -41,7 +42,7 @@ section .box:nth-child(1) {
 }
 
 section .box:nth-child(2) {
-    clip-path: circle(150px at center);
+    clip-path: circle(150px at var(--x) var(--y));
 }
 
 section .box h2 {
@@ -49,6 +50,7 @@ section .box h2 {
     color: #fff;
     font-size: 10em;
     transform: translate(0, 0);
+    transform: translate(calc(var(--x)/25), calc(var(--y)/25));
 }
 
 .circle {
@@ -59,6 +61,6 @@ section .box h2 {
     height: 300px;
     border: 2px solid #fff;
     border-radius: 50%;
-    box-shadow: 0 5px25px rgba(0, 0, 0, 0.25);
-    transform: translate(0, 0);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+    transform: translate(var(--x), var(--y));
 }
