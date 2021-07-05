@@ -1,23 +1,22 @@
-body
-{
+body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     background: seagreen;
 }
-h1
-{
+
+h1 {
     text-align: center;
     color: #fff;
 }
-.container
-{
+
+.container {
     display: flex;
     justify-content: space-between;
     padding-top: 2m;
 }
-.item
-{
+
+.item {
     background: black;
     line-height: 4;
     padding: 0 2em;
@@ -26,8 +25,7 @@ h1
     position: relative;
 }
 
-.item:before
-{
+.item:before {
     content: '';
     display: block;
     width: 0;
@@ -39,32 +37,30 @@ h1
     transition: all .3s;
 }
 
-
-.uno:before
-{
+.uno:before {
     left: 0;
 }
-.uno:hover:before{
+
+.uno:hover:before {
     width: 100%;
 }
 
-
-.dos:before
-{
+.dos:before {
     right: 0;
 }
-.dos:hover:before{
+
+.dos:hover:before {
     width: 100%;
 }
 
-.tres:before
-{
+.tres:before {
     left: 50%;
 }
-.tres:hover:before
-{
+
+.tres:hover:before {
     left: 0;
     width: 100%;
 }
 
 
+/* finalizando proyecto */
